@@ -1,0 +1,193 @@
+/*
+===================
+MEDIA QUERIES
+===================
+*/
+
+
+
+#background {
+    opacity: .9;
+    overflow: hidden;
+    height: 100%;
+    width: 120%;
+}
+
+.right-content {
+    min-width: 14.375em;
+    width: 30%;
+    height: 85%;
+    background: #111;
+    float: right;
+    border-left: .5em solid #dedede;
+}
+
+.reviews {
+    display: block;
+    height: 49%;
+    position: relative;
+    border-bottom: .5em solid #dedede;
+    width: 100%;
+}
+
+.reviews-wrap{
+    display: block;
+    height: 100%;
+    background-color: #051e00;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    -webkit-transition: background-color .4s;
+    -moz-transition: background-color .4s;
+    -o-transition: background-color .4s;
+    -ms-transition: background-color .4s;
+    transition: background-color .4s;
+    z-index: 1;
+}
+
+.reviews-wrap:hover {
+    background-color: #44A34A;
+}
+
+.press {
+    display: inline-block;
+    color: #dedede;
+    position: relative;
+    top: 25%;
+    padding: 0 2em;
+    text-align: center;
+}
+
+.press h4 {
+    letter-spacing: 2px;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: .5em;
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+.press h3 {
+    font-family: 'Domine', serif;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.about {
+    font-size: 0.9em;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 8%;
+    text-align: justify;
+    background-color: #111;
+    overflow: hidden;
+    float: right;
+    height: 49%;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about p {
+    margin-top: 8%;
+}
+
+/*
+===================
+MEDIA MEDIUM
+===================
+*/
+
+@media screen and (max-width:1260px) {
+    
+    .right-content {
+    background-color: #111;
+    border-left: none;
+    border-top: .5em solid #fff;
+    position: relative;
+    margin-top: 70%;
+    overflow: hidden;
+    top: auto;
+    bottom: 0;
+    height: 40%;
+    min-height: 250px;
+    width: 100%;
+    
+}
+    .reviews {
+    font-size: .8em;
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-bottom:0;
+}
+    
+    .press {
+        display: inline-block;
+        padding: 1em 2em;
+        top: 7em;
+
+    }
+    
+    .about {
+    width: 50%;
+    height: 100%;
+    float: right;
+    color: #dedede;
+    font-size: .8em;
+    line-height: 2em;;
+    padding: 3% 6%;
+    }
+    
+    .about p {
+        margin-top:1em;
+    }
+
+}
+
+/*
+===================
+MEDIA SMALL
+===================
+*/
+
+@media screen and (max-width:635px) {
+
+    .right-content {
+    display: block;
+    background-color: #111;
+    border-top: .5em solid #fff;
+    margin-top: 70%;
+    position: relative;
+    height: 60em;
+    width: 100%;
+    float: left;
+}
+
+    #reviews {
+    font-size: .8em;
+    width: 100%;
+    height: 25em;
+    font-size: 1em;
+    float: left;
+}
+    
+    #about {
+    color: #dedede;
+    font-size: .8em;
+    line-height: 2em;
+    padding: 4% 6% 7% 6%;
+    width: 100%;
+    height: 35em;
+    border-top: .5em solid #DEDEDE;
+    font-size: 1em;
+    float: left;
+    }
+
+    .about p {
+        margin: 1em 0 0 0;
+    }
+    
+}

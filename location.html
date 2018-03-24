@@ -1,0 +1,68 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,700" rel="stylesheet">
+        <link href="stylesheets/global.css" type="text/css" rel=stylesheet>
+        <link href="stylesheets/location.css" type="text/css" rel=stylesheet>
+        
+        
+    </head>
+
+    <body>
+        <nav class="topnav" id="main-nav">
+            <ul>
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="food"><a href="food.html">Food</a></li>
+                <li class="community"><a href="community.html">Community</a></li>
+                <li class="sourcing"><a href="sourcing.html">Sourcing</a></li>
+                <li class="events"><a href="events.html">Events</a></li>
+                <li class="location"><a id="active" href="location.html">Locations</a></li>
+                <li class="contact"><a  href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="backstretch">
+            <img class="background" src="assets/images/coffee-cup.gif" alt="Coffee Cup Latte Art">
+        </div>
+        <div class="wrapper">
+            <div class="horizontal-wrapper">
+            <section class="loc">
+                <h1>Location</h1>
+                <p>We are located on Sarah Street in Pittsburgh's South Side Neighborhood.</p>
+                    <section class="loc-adr">
+                        <p class="adr">
+                            <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Big+Dog+Coffee,+2717+Sarah+Street,+Pittsburgh,+PA+15203&amp;sll=40.426794,-90.966714&amp;sspn=0.008102,0.018325&amp;g=2717+Sarah+Street,+Pittsburgh,+PA+15203&amp;ie=UTF8&amp;ll=40.4273,-79.966757&amp;spn=0.008102,0.018325&amp;z=16&amp;iwloc=A" target="_blank"><span class="street-address">2717 Sarah Street</span>
+                            <span class="region">Pittsburgh, PA 15203</span></a>
+                        </p>
+                        <a href="tel:+4125867306">Tel: (412)586-7306</a>
+                    </section>
+                  <div id="map-wrapper">
+                      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                        <div style='height:250px;width:850px;'>
+                      
+                          <div id='gmap_canvas' style='height:250px;width:850px;'>
+                          </div>
+                          <style>#gmap_canvas img{max-width:none!important;background:none!important}
+                          </style>
+                        </div>
+                      
+                      <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.42595310000001,-79.96670740000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.42595310000001,-79.96670740000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Big Dog Coffee</strong><br>2717 Sarah St, Pittsburgh, PA 15203<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                </div>
+                </section>
+            </div>
+        </div>      
+        
+        <footer id="store-hours">
+            <h3><a href="index.html">Big Dog Coffee</a></h3>
+            <p>Mon.-Fri.: 6am-10pm</p>
+            <p>Sat: 7:30am-10pm</p>
+            <p>Sun: 7:30am-10pm</p>
+        </footer>
+    
+    
+    
+    
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+
+.comm-info p, .comm-info h1, .comm-info h3 {
+    margin: 0 1em;
+}
+
+.comm-info p {
+    text-align: left;
+    padding: 1% 3% 2% 2%;
+}
+
+.comm-info h1 {
+    text-align: center;
+    padding: 3% 2% 2% 2%;
+}
+
+.comm-info h3 {
+    text-align: left;
+    padding: 1% 2%;
+}
+
+#more-comm-info {
+    display:block;
+    background-color: #44A34A;
+    color: #dedede;
+    text-align: center;
+    padding: 2% 0;
+}
+
+#more-comm-info a {
+    margin: 0 0 0 .5em;
+    color: #051e00;
+    font-weight:400;
+}
+
+#more-comm-info a:hover {
+    color: #dedede;
+    text-decoration: underline;
+}
+

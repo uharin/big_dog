@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+CSS RESET
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+======================
+BORDER BOX
+======================
+*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*
+========================
+CLEARFIX
+========================
+*/
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/*
+========================
+TYPOGRAPHY
+========================
+*/
+
+html {
+    background-color: #111;
+}
+
+body {
+    font-family: "Roboto Slab", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #dedede;
+}
+
+#active {
+    color: #fff;
+    background-color: #051e00;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+h4 {
+    font-weight:300;
+    font-size: 1em;
+}
+
+/*
+==================
+LINKS
+==================
+*/
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+a:visited {
+    color: #dedede;
+}
+
+/*
+=================
+NAVIGATION
+=================
+*/
+
+.topnav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3.125em;
+    margin-left: 3.125em;
+    width: 10.625em;
+    height: 10.625em;
+    overflow: visible;
+    background-color: #111;
+    z-index: 9999;
+}
+
+.topnav a {
+    padding-left: 7%;
+    display: block;
+    font-size: .9em;
+    color: #dedede;
+    margin-top: .02em;
+    transition: background-color .4s;
+}
+
+.topnav a:hover {
+    background-color: #44A34A;
+}
+
+
+/*
+==================
+BACKSTRETCH
+==================
+*/
+
+.backstretch {
+    background-color: #111;
+    opacity: .8;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    visibility: visible;
+    overflow: hidden;
+    z-index: -9990;
+}
+
+.background {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    z-index: 1;
+}
+
+/*
+===================
+WRAPPERS
+===================
+*/
+
+.wrapper {
+    display: block;
+    margin:  auto;
+    width: 100%;
+    max-width: 960px;
+    color: #222;
+    clear: both;
+}
+
+.horizontal-wrapper {
+    display: block;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    min-height: 300px;
+    width: 100%;
+    background-color: #dedede;
+    float: left;
+    border: .5em solid #222;
+    opacity: .95;
+    clear: both;
+}
+
+/*
+===================
+FOOTER
+===================
+*/
+
+    #store-hours {
+        background-color: #111;
+        color: #EBF0EF;
+        position: relative;
+        font-size: .8em;
+        margin: 0 auto;
+        width: 100%;
+        float: left;
+        border-top: solid .5em #dedede;
+    }
+    
+    #store-hours a {
+        color: #dedede;
+        display: block;
+        padding: 1em 0 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+    
+    #store-hours p, #store-hours h3 {
+        margin: .2em auto;
+        text-align: center;
+    }
+
+    #store-hours p:last-child {
+        padding-bottom: 2em;
+}
+
+/*
+=====================
+GLOBAL MEDIA QUERIES
+=====================
+*/
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:750px) {
+
+#main-nav {
+     margin-top: .5em;
+    margin-left:.5em;
+    }   
+    
+.horizontal-wrapper {
+    margin-top: 65%;
+    }
+
+
+#active {
+    background-color: #44A34A;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,74 @@
+
+
+.menu h1 {
+    text-align: center;
+    padding: 3% 2% 2% 2%;
+}
+
+.menu p {
+    text-align: center;
+    padding: 1%;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+
+table#menu-list {
+    table-layout: auto;
+    width:80%; 
+    margin: 0 10%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 4px solid #051e00;
+  }
+
+tr, td, th {
+    padding: 1% 2%;
+    white-space: nowrap;
+}
+
+.amount {
+    text-align: center;
+}
+
+.sale-item {
+    display: block;
+    margin-left: 2em;
+}
+
+.dr-name, .empty-set, .dr-price {
+    background-color: #051e00;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+tr:nth-child(2n+2) {
+    background-color: #44A34A;
+    opacity: .9;
+    color: #FFF;
+}
+
+.empty {
+    letter-spacing: 2em;
+    font-weight: 500;
+}
+
+
+/*
+===================
+MEDIA SMALL
+===================
+*/
+
+@media screen and (max-width:780px) {
+    
+    .empty-set, .empty {
+        display: none;
+    }
+        
+    }
+
